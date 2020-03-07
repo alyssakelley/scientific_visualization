@@ -1,0 +1,160 @@
+OpenDatabase("localhost:/Users/alyssakelley/scientific_visualization/aneurysm_data/aneurysm.visit", 0)
+# MAINTENANCE ISSUE: SetSuppressMessagesRPC is not handled in Logging.C. Please contact a VisIt developer.
+SaveSession("/Users/alyssakelley/.visit/crash_recovery.8210.session")
+# MAINTENANCE ISSUE: SetSuppressMessagesRPC is not handled in Logging.C. Please contact a VisIt developer.
+AddPlot("Volume", "pressure", 1, 1)
+DrawPlots()
+DrawPlots()
+# Begin spontaneous state
+View3DAtts = View3DAttributes()
+View3DAtts.viewNormal = (-0.248796, -0.117829, 0.961362)
+View3DAtts.focus = (3.89585, 3.99132, 4.90529)
+View3DAtts.viewUp = (0.651572, 0.714035, 0.256139)
+View3DAtts.viewAngle = 30
+View3DAtts.parallelScale = 2.05937
+View3DAtts.nearPlane = -4.11875
+View3DAtts.farPlane = 4.11875
+View3DAtts.imagePan = (0, 0)
+View3DAtts.imageZoom = 1
+View3DAtts.perspective = 1
+View3DAtts.eyeAngle = 2
+View3DAtts.centerOfRotationSet = 0
+View3DAtts.centerOfRotation = (3.89585, 3.99132, 4.90529)
+View3DAtts.axis3DScaleFlag = 0
+View3DAtts.axis3DScales = (1, 1, 1)
+View3DAtts.shear = (0, 0, 1)
+View3DAtts.windowValid = 1
+SetView3D(View3DAtts)
+# End spontaneous state
+
+# Begin spontaneous state
+View3DAtts = View3DAttributes()
+View3DAtts.viewNormal = (0.868228, -0.387854, 0.309435)
+View3DAtts.focus = (3.89585, 3.99132, 4.90529)
+View3DAtts.viewUp = (0.413257, 0.910429, -0.0183809)
+View3DAtts.viewAngle = 30
+View3DAtts.parallelScale = 2.05937
+View3DAtts.nearPlane = -4.11875
+View3DAtts.farPlane = 4.11875
+View3DAtts.imagePan = (0, 0)
+View3DAtts.imageZoom = 1
+View3DAtts.perspective = 1
+View3DAtts.eyeAngle = 2
+View3DAtts.centerOfRotationSet = 0
+View3DAtts.centerOfRotation = (3.89585, 3.99132, 4.90529)
+View3DAtts.axis3DScaleFlag = 0
+View3DAtts.axis3DScales = (1, 1, 1)
+View3DAtts.shear = (0, 0, 1)
+View3DAtts.windowValid = 1
+SetView3D(View3DAtts)
+# End spontaneous state
+
+# Begin spontaneous state
+View3DAtts = View3DAttributes()
+View3DAtts.viewNormal = (0.944334, -0.208886, 0.254166)
+View3DAtts.focus = (3.89585, 3.99132, 4.90529)
+View3DAtts.viewUp = (0.226927, 0.972939, -0.0435196)
+View3DAtts.viewAngle = 30
+View3DAtts.parallelScale = 2.05937
+View3DAtts.nearPlane = -4.11875
+View3DAtts.farPlane = 4.11875
+View3DAtts.imagePan = (0, 0)
+View3DAtts.imageZoom = 1
+View3DAtts.perspective = 1
+View3DAtts.eyeAngle = 2
+View3DAtts.centerOfRotationSet = 0
+View3DAtts.centerOfRotation = (3.89585, 3.99132, 4.90529)
+View3DAtts.axis3DScaleFlag = 0
+View3DAtts.axis3DScales = (1, 1, 1)
+View3DAtts.shear = (0, 0, 1)
+View3DAtts.windowValid = 1
+SetView3D(View3DAtts)
+# End spontaneous state
+
+# Begin spontaneous state
+View3DAtts = View3DAttributes()
+View3DAtts.viewNormal = (0.988796, -0.062107, 0.135743)
+View3DAtts.focus = (3.89585, 3.99132, 4.90529)
+View3DAtts.viewUp = (0.0566256, 0.997431, 0.0438798)
+View3DAtts.viewAngle = 30
+View3DAtts.parallelScale = 2.05937
+View3DAtts.nearPlane = -4.11875
+View3DAtts.farPlane = 4.11875
+View3DAtts.imagePan = (0, 0)
+View3DAtts.imageZoom = 1
+View3DAtts.perspective = 1
+View3DAtts.eyeAngle = 2
+View3DAtts.centerOfRotationSet = 0
+View3DAtts.centerOfRotation = (3.89585, 3.99132, 4.90529)
+View3DAtts.axis3DScaleFlag = 0
+View3DAtts.axis3DScales = (1, 1, 1)
+View3DAtts.shear = (0, 0, 1)
+View3DAtts.windowValid = 1
+SetView3D(View3DAtts)
+# End spontaneous state
+
+# Begin spontaneous state
+View3DAtts = View3DAttributes()
+View3DAtts.viewNormal = (-0.182344, 0.377003, -0.908085)
+View3DAtts.focus = (3.89585, 3.99132, 4.90529)
+View3DAtts.viewUp = (0.711405, 0.688116, 0.142829)
+View3DAtts.viewAngle = 30
+View3DAtts.parallelScale = 2.05937
+View3DAtts.nearPlane = -4.11875
+View3DAtts.farPlane = 4.11875
+View3DAtts.imagePan = (0, 0)
+View3DAtts.imageZoom = 1
+View3DAtts.perspective = 1
+View3DAtts.eyeAngle = 2
+View3DAtts.centerOfRotationSet = 0
+View3DAtts.centerOfRotation = (3.89585, 3.99132, 4.90529)
+View3DAtts.axis3DScaleFlag = 0
+View3DAtts.axis3DScales = (1, 1, 1)
+View3DAtts.shear = (0, 0, 1)
+View3DAtts.windowValid = 1
+SetView3D(View3DAtts)
+# End spontaneous state
+
+# Begin spontaneous state
+View3DAtts = View3DAttributes()
+View3DAtts.viewNormal = (-0.970785, 0.224373, -0.0850482)
+View3DAtts.focus = (3.89585, 3.99132, 4.90529)
+View3DAtts.viewUp = (0.236076, 0.956544, -0.171146)
+View3DAtts.viewAngle = 30
+View3DAtts.parallelScale = 2.05937
+View3DAtts.nearPlane = -4.11875
+View3DAtts.farPlane = 4.11875
+View3DAtts.imagePan = (0, 0)
+View3DAtts.imageZoom = 1
+View3DAtts.perspective = 1
+View3DAtts.eyeAngle = 2
+View3DAtts.centerOfRotationSet = 0
+View3DAtts.centerOfRotation = (3.89585, 3.99132, 4.90529)
+View3DAtts.axis3DScaleFlag = 0
+View3DAtts.axis3DScales = (1, 1, 1)
+View3DAtts.shear = (0, 0, 1)
+View3DAtts.windowValid = 1
+SetView3D(View3DAtts)
+# End spontaneous state
+
+# Begin spontaneous state
+View3DAtts = View3DAttributes()
+View3DAtts.viewNormal = (-0.989656, 0.125063, -0.0702811)
+View3DAtts.focus = (3.89585, 3.99132, 4.90529)
+View3DAtts.viewUp = (0.125884, 0.992018, -0.00735667)
+View3DAtts.viewAngle = 30
+View3DAtts.parallelScale = 2.05937
+View3DAtts.nearPlane = -4.11875
+View3DAtts.farPlane = 4.11875
+View3DAtts.imagePan = (0, 0)
+View3DAtts.imageZoom = 1
+View3DAtts.perspective = 1
+View3DAtts.eyeAngle = 2
+View3DAtts.centerOfRotationSet = 0
+View3DAtts.centerOfRotation = (3.89585, 3.99132, 4.90529)
+View3DAtts.axis3DScaleFlag = 0
+View3DAtts.axis3DScales = (1, 1, 1)
+View3DAtts.shear = (0, 0, 1)
+View3DAtts.windowValid = 1
+SetView3D(View3DAtts)
+# End spontaneous state
