@@ -2,27 +2,29 @@ import sys
 # /Applications/VisIt.app/Contents/Resources/bin/visit -cli -s initialize.py
 
 # Path for Alyssa's aneurysm data:
-path_to_aneurysm_data = "localhost:/Users/alyssakelley/scientific_visualization/aneurysm_data/aneurysm_data/"
+#path_to_aneurysm_data = "localhost:/Users/alyssakelley/scientific_visualization/aneurysm_data/aneurysm_data/"
 
 # Path for Anne's aneurysm data:
-# path_to_aneurysm_data = "localhost:/Users/moonshine/CIS_410/finalproject/aneurysm_tutorial_data/aneurysm_data/"
+path_to_aneurysm_data = "localhost:/Users/moonshine/CIS_410/finalproject/aneurysm_tutorial_data/aneurysm_data/"
 
 def SetUpVelocity():
-    RestoreSession("velocity.session",0)
+    #RestoreSession("velocity.session",0)
+    RestoreSession("vandp2.session",0)
     OpenDatabase(
     path_to_aneurysm_data+"aneurysm*.silo database",0)
     AddPlot("Contour", "pressure", 1, 1)
     DrawPlots()
 
 def SetUpPressure():
-    RestoreSession("pressure.session",0)
+    #RestoreSession("pressure.session",0)
+    RestoreSession("vandp2.session",0)
     OpenDatabase(
     path_to_aneurysm_data+"aneurysm*.silo database",0)
     AddPlot("Contour", "pressure", 1, 1)
     DrawPlots()
     
 def SetUpVandP():
-    RestoreSession("vandp.session",0)
+    RestoreSession("vandp2.session",0)
     OpenDatabase(
     path_to_aneurysm_data+"aneurysm*.silo database",0)
     AddPlot("Contour", "pressure", 1, 1)
@@ -30,7 +32,7 @@ def SetUpVandP():
     DrawPlots()
 
 def SetUpVolumePressure():
-	RestoreSession("volume_pressure.session",0)
+	RestoreSession("volume_pressure2.session",0)
 	OpenDatabase(
     path_to_aneurysm_data+"aneurysm*.silo database",0)
 	AddPlot("Volume", "pressure", 1, 1)
@@ -46,10 +48,13 @@ def AnimateInTime():
 def main():
 	SetUpVolumePressure()
 	AnimateInTime()
+    
 	SetUpVelocity()
 	AnimateInTime()
+    
 	SetUpPressure()
 	AnimateInTime()
+    
 	SetUpVandP()
 	AnimateInTime()
 	sys.exit()
