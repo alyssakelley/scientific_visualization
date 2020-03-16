@@ -720,12 +720,12 @@
                 <Object name="axes3D">
                     <Object name="Axes3D">
                         <Field name="visible" type="bool">false</Field>
-                        <Field name="autoSetTicks" type="bool">false</Field>
-                        <Field name="autoSetScaling" type="bool">false</Field>
+                        <Field name="autoSetTicks" type="bool">true</Field>
+                        <Field name="autoSetScaling" type="bool">true</Field>
                         <Field name="lineWidth" type="int">0</Field>
                         <Field name="tickLocation" type="string">Inside</Field>
                         <Field name="axesType" type="string">ClosestTriad</Field>
-                        <Field name="triadFlag" type="bool">true</Field>
+                        <Field name="triadFlag" type="bool">false</Field>
                         <Field name="bboxFlag" type="bool">true</Field>
                         <Object name="xAxis">
                             <Object name="AxisAttributes">
@@ -1046,9 +1046,9 @@
                 <Field name="windowValid" type="bool">false</Field>
             </Object>
             <Object name="View3DAttributes">
-                <Field name="viewNormal" type="doubleArray" length="3">-0.990979281433245 0.00580535918991096 -0.133889363187392 </Field>
+                <Field name="viewNormal" type="doubleArray" length="3">-0.996588785076817 0.0700320329325797 0.0436612851671127 </Field>
                 <Field name="focus" type="doubleArray" length="3">3.895845 3.99132 4.905295 </Field>
-                <Field name="viewUp" type="doubleArray" length="3">0.00775950120824304 0.99987079153511 -0.0140780103690917 </Field>
+                <Field name="viewUp" type="doubleArray" length="3">0.0697748021483539 0.997535397072452 -0.00738976134013782 </Field>
                 <Field name="viewAngle" type="double">30</Field>
                 <Field name="parallelScale" type="double">2.0593729353495</Field>
                 <Field name="nearPlane" type="double">-4.11874587069899</Field>
@@ -1313,7 +1313,43 @@
             </Object>
             <Object name="AnnotationObjectList">
                 <Object name="AnnotationObject">
-                    <Field name="objectName" type="string">Plot0010</Field>
+                    <Field name="objectName" type="string">Plot0000</Field>
+                    <Field name="objectType" type="string">LegendAttributes</Field>
+                    <Field name="visible" type="bool">true</Field>
+                    <Field name="active" type="bool">false</Field>
+                    <Field name="position" type="doubleArray" length="3">0.05 0.9 0 </Field>
+                    <Field name="position2" type="doubleArray" length="3">1 1 1 </Field>
+                    <Object name="textColor">
+                        <Object name="ColorAttribute">
+                            <Field name="color" type="unsignedCharArray" length="4">0 0 0 255 </Field>
+                        </Object>
+                    </Object>
+                    <Field name="useForegroundForTextColor" type="bool">true</Field>
+                    <Object name="color1">
+                        <Object name="ColorAttribute">
+                            <Field name="color" type="unsignedCharArray" length="4">0 0 0 50 </Field>
+                        </Object>
+                    </Object>
+                    <Object name="color2">
+                        <Object name="ColorAttribute">
+                            <Field name="color" type="unsignedCharArray" length="4">0 0 0 255 </Field>
+                        </Object>
+                    </Object>
+                    <Field name="text" type="stringVector">"%# -9.4g" </Field>
+                    <Field name="fontFamily" type="string">Arial</Field>
+                    <Field name="fontBold" type="bool">false</Field>
+                    <Field name="fontItalic" type="bool">false</Field>
+                    <Field name="fontShadow" type="bool">false</Field>
+                    <Field name="doubleAttribute1" type="double">0.015</Field>
+                    <Field name="intAttribute1" type="int">993</Field>
+                    <Field name="intAttribute2" type="int">5</Field>
+                    <Field name="intAttribute3" type="int">0</Field>
+                    <Field name="doubleVector1" type="doubleVector"></Field>
+                    <Field name="stringVector1" type="stringVector"></Field>
+                    <Field name="stringVector2" type="stringVector"></Field>
+                </Object>
+                <Object name="AnnotationObject">
+                    <Field name="objectName" type="string">Plot0001</Field>
                     <Field name="objectType" type="string">LegendAttributes</Field>
                     <Field name="visible" type="bool">true</Field>
                     <Field name="active" type="bool">true</Field>
@@ -1343,10 +1379,10 @@
                     <Field name="doubleAttribute1" type="double">0.015</Field>
                     <Field name="intAttribute1" type="int">993</Field>
                     <Field name="intAttribute2" type="int">5</Field>
-                    <Field name="intAttribute3" type="int">1</Field>
-                    <Field name="doubleVector1" type="doubleVector">11.1448 37.8351 64.5253 91.2156 117.906 144.596 171.286 197.977 224.667 251.357 </Field>
-                    <Field name="stringVector1" type="stringVector">"" "" "" "" "" "" "" "" "" "" </Field>
-                    <Field name="stringVector2" type="stringVector">"11.1448" "37.8351" "64.5253" "91.2156" "117.906" "144.596" "171.286" "197.977" "224.667" "251.357" </Field>
+                    <Field name="intAttribute3" type="int">0</Field>
+                    <Field name="doubleVector1" type="doubleVector"></Field>
+                    <Field name="stringVector1" type="stringVector"></Field>
+                    <Field name="stringVector2" type="stringVector"></Field>
                 </Object>
             </Object>
             <Object name="PickAttributes">
@@ -3096,7 +3132,7 @@
             <Object name="ContourAttributes">
                 <Object name="defaultPalette">
                     <Object name="ColorControlPointList">
-                        <Field name="compactColors" type="unsignedCharVector">255 0 0 21 0 255 0 57 0 0 255 79 0 255 255 92 255 0 255 112 255 255 0 121 255 135 0 142 255 0 135 155 168 168 168 205 255 68 68 229 99 255 99 255 99 99 255 255 40 165 165 255 255 99 255 255 255 255 99 255 255 170 99 255 170 79 255 255 150 0 0 255 0 150 0 255 0 0 150 255 0 109 109 255 150 0 150 255 150 150 0 255 150 84 0 255 160 0 79 255 255 104 28 255 0 170 81 255 68 255 124 255 0 130 255 255 130 0 255 255 </Field>
+                        <Field name="compactColors" type="unsignedCharVector">255 0 0 26 0 255 0 43 0 0 255 69 0 255 255 91 255 0 255 109 255 255 0 129 255 135 0 155 255 0 135 176 168 168 168 204 255 68 68 238 99 255 99 255 99 99 255 255 40 165 165 255 255 99 255 255 255 255 99 255 255 170 99 255 170 79 255 255 150 0 0 255 0 150 0 255 0 0 150 255 0 109 109 255 150 0 150 255 150 150 0 255 150 84 0 255 160 0 79 255 255 104 28 255 0 170 81 255 68 255 124 255 0 130 255 255 130 0 255 255 </Field>
                         <Field name="compactPositions" type="floatVector">0 0.034 0.069 0.103 0.138 0.172 0.207 0.241 0.276 0.31 0.345 0.379 0.414 0.448 0.483 0.517 0.552 0.586 0.621 0.655 0.69 0.724 0.759 0.793 0.828 0.862 0.897 0.931 0.966 1 </Field>
                         <Field name="smoothing" type="string">None</Field>
                         <Field name="equal" type="bool">true</Field>
@@ -4578,10 +4614,10 @@
         </Object>
         <Object name="ViewerSubject">
             <Object name="SourceMap">
-                <Field name="SOURCE00" type="string">"localhost:/Users/moonshine/CIS_410/finalproject/aneurysm_tutorial_data/aneurysm_data/aneurysm*.silo database"</Field>
+                <Field name="SOURCE00" type="string">localhost:/Users/moonshine/CIS_410/finalproject/scientific_visualization/aneurysm_data/aneurysm.visit</Field>
             </Object>
             <Object name="SourcePlugins">
-                <Field name="localhost:/Users/moonshine/CIS_410/finalproject/aneurysm_tutorial_data/aneurysm_data/aneurysm*.silo database" type="string">Silo_1.0</Field>
+                <Field name="localhost:/Users/moonshine/CIS_410/finalproject/scientific_visualization/aneurysm_data/aneurysm.visit" type="string">Silo_1.0</Field>
             </Object>
             <Object name="DatabaseCorrelationList">
                 <Field name="needPermission" type="bool">true</Field>
@@ -4601,7 +4637,7 @@
                     <Object name="ViewerWindow">
                         <Field name="windowSize" type="intArray" length="2">790 788 </Field>
                         <Field name="windowImageSize" type="intArray" length="2">790 744 </Field>
-                        <Field name="windowLocation" type="intArray" length="2">436 25 </Field>
+                        <Field name="windowLocation" type="intArray" length="2">407 24 </Field>
                         <Field name="maintainView" type="bool">false</Field>
                         <Field name="cameraView" type="bool">false</Field>
                         <Field name="viewExtentsType" type="string">AVT_ORIGINAL_EXTENTS</Field>
@@ -4738,8 +4774,8 @@
                             <Object name="axes3D">
                                 <Object name="Axes3D">
                                     <Field name="visible" type="bool">false</Field>
-                                    <Field name="autoSetTicks" type="bool">false</Field>
-                                    <Field name="autoSetScaling" type="bool">false</Field>
+                                    <Field name="autoSetTicks" type="bool">true</Field>
+                                    <Field name="autoSetScaling" type="bool">true</Field>
                                     <Field name="lineWidth" type="int">0</Field>
                                     <Field name="tickLocation" type="string">Inside</Field>
                                     <Field name="axesType" type="string">ClosestTriad</Field>
@@ -5209,9 +5245,9 @@
                             <Field name="windowValid" type="bool">false</Field>
                         </Object>
                         <Object name="View3DAttributes">
-                            <Field name="viewNormal" type="doubleArray" length="3">-0.990979281433245 0.00580535918991096 -0.133889363187392 </Field>
+                            <Field name="viewNormal" type="doubleArray" length="3">-0.996588785076817 0.0700320329325797 0.0436612851671127 </Field>
                             <Field name="focus" type="doubleArray" length="3">3.895845 3.99132 4.905295 </Field>
-                            <Field name="viewUp" type="doubleArray" length="3">0.00775950120824304 0.99987079153511 -0.0140780103690917 </Field>
+                            <Field name="viewUp" type="doubleArray" length="3">0.0697748021483539 0.997535397072452 -0.00738976134013782 </Field>
                             <Field name="viewAngle" type="double">30</Field>
                             <Field name="parallelScale" type="double">2.0593729353495</Field>
                             <Field name="nearPlane" type="double">-4.11874587069899</Field>
@@ -5234,7 +5270,7 @@
                         </Object>
                         <Object name="AnnotationObjectList">
                             <Object name="AnnotationObject">
-                                <Field name="objectName" type="string">Plot0017</Field>
+                                <Field name="objectName" type="string">Plot0003</Field>
                                 <Field name="objectType" type="string">LegendAttributes</Field>
                                 <Field name="visible" type="bool">true</Field>
                                 <Field name="active" type="bool">true</Field>
@@ -5280,11 +5316,11 @@
                         </Object>
                         <Object name="ViewerPlotList">
                             <Object name="timeSliders">
-                                <Field name="SOURCE00" type="int">103</Field>
+                                <Field name="SOURCE00" type="int">0</Field>
                             </Object>
                             <Field name="activeTimeSlider" type="string">SOURCE00</Field>
                             <Object name="plot00">
-                                <Field name="plotName" type="string">Plot0017</Field>
+                                <Field name="plotName" type="string">Plot0003</Field>
                                 <Field name="pluginID" type="string">Contour_1.0</Field>
                                 <Field name="sourceID" type="string">SOURCE00</Field>
                                 <Field name="variableName" type="string">velocity_magnitude</Field>
@@ -5293,7 +5329,7 @@
                                 <Field name="realized" type="bool">true</Field>
                                 <Object name="ViewerPlot">
                                     <Field name="plotDescription" type="string"></Field>
-                                    <Field name="cacheIndex" type="int">103</Field>
+                                    <Field name="cacheIndex" type="int">0</Field>
                                     <Field name="spatialExtentsType" type="string">AVT_ORIGINAL_EXTENTS</Field>
                                     <Field name="bgColor" type="doubleArray" length="3">1 1 1 </Field>
                                     <Field name="fgColor" type="doubleArray" length="3">0 0 0 </Field>
@@ -5302,7 +5338,7 @@
                                     <Object name="ContourAttributes">
                                         <Object name="defaultPalette">
                                             <Object name="ColorControlPointList">
-                                                <Field name="compactColors" type="unsignedCharVector">255 0 0 21 0 255 0 57 0 0 255 79 0 255 255 92 255 0 255 112 255 255 0 121 255 135 0 142 255 0 135 155 168 168 168 205 255 68 68 229 99 255 99 255 99 99 255 255 40 165 165 255 255 99 255 255 255 255 99 255 255 170 99 255 170 79 255 255 150 0 0 255 0 150 0 255 0 0 150 255 0 109 109 255 150 0 150 255 150 150 0 255 150 84 0 255 160 0 79 255 255 104 28 255 0 170 81 255 68 255 124 255 0 130 255 255 130 0 255 255 </Field>
+                                                <Field name="compactColors" type="unsignedCharVector">255 0 0 26 0 255 0 43 0 0 255 69 0 255 255 91 255 0 255 109 255 255 0 129 255 135 0 155 255 0 135 176 168 168 168 204 255 68 68 238 99 255 99 255 99 99 255 255 40 165 165 255 255 99 255 255 255 255 99 255 255 170 99 255 170 79 255 255 150 0 0 255 0 150 0 255 0 0 150 255 0 109 109 255 150 0 150 255 150 150 0 255 150 84 0 255 160 0 79 255 255 104 28 255 0 170 81 255 68 255 124 255 0 130 255 255 130 0 255 255 </Field>
                                                 <Field name="compactPositions" type="floatVector">0 0.034 0.069 0.103 0.138 0.172 0.207 0.241 0.276 0.31 0.345 0.379 0.414 0.448 0.483 0.517 0.552 0.586 0.621 0.655 0.69 0.724 0.759 0.793 0.828 0.862 0.897 0.931 0.966 1 </Field>
                                                 <Field name="smoothing" type="string">None</Field>
                                                 <Field name="equal" type="bool">true</Field>
@@ -5339,7 +5375,7 @@
                                                 <Object name="ContourAttributes">
                                                     <Object name="defaultPalette">
                                                         <Object name="ColorControlPointList">
-                                                            <Field name="compactColors" type="unsignedCharVector">255 0 0 21 0 255 0 57 0 0 255 79 0 255 255 92 255 0 255 112 255 255 0 121 255 135 0 142 255 0 135 155 168 168 168 205 255 68 68 229 99 255 99 255 99 99 255 255 40 165 165 255 255 99 255 255 255 255 99 255 255 170 99 255 170 79 255 255 150 0 0 255 0 150 0 255 0 0 150 255 0 109 109 255 150 0 150 255 150 150 0 255 150 84 0 255 160 0 79 255 255 104 28 255 0 170 81 255 68 255 124 255 0 130 255 255 130 0 255 255 </Field>
+                                                            <Field name="compactColors" type="unsignedCharVector">255 0 0 26 0 255 0 43 0 0 255 69 0 255 255 91 255 0 255 109 255 255 0 129 255 135 0 155 255 0 135 176 168 168 168 204 255 68 68 238 99 255 99 255 99 99 255 255 40 165 165 255 255 99 255 255 255 255 99 255 255 170 99 255 170 79 255 255 150 0 0 255 0 150 0 255 0 0 150 255 0 109 109 255 150 0 150 255 150 150 0 255 150 84 0 255 160 0 79 255 255 104 28 255 0 170 81 255 68 255 124 255 0 130 255 255 130 0 255 255 </Field>
                                                             <Field name="compactPositions" type="floatVector">0 0.034 0.069 0.103 0.138 0.172 0.207 0.241 0.276 0.31 0.345 0.379 0.414 0.448 0.483 0.517 0.552 0.586 0.621 0.655 0.69 0.724 0.759 0.793 0.828 0.862 0.897 0.931 0.966 1 </Field>
                                                             <Field name="smoothing" type="string">None</Field>
                                                             <Field name="equal" type="bool">true</Field>
@@ -5417,7 +5453,7 @@
             <Object name="RunningEngines">
                 <Object name="MachineProfile">
                     <Field name="hostNickname" type="string"></Field>
-                    <Field name="host" type="string">annes-macbook-pro.local</Field>
+                    <Field name="host" type="string">dyn-10-108-127-13.wless.uoregon.edu</Field>
                     <Field name="userName" type="string">moonshine</Field>
                     <Field name="hostAliases" type="string"></Field>
                     <Field name="directory" type="string"></Field>
