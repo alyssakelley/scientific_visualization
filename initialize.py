@@ -48,13 +48,11 @@ def AnimateInTime():
 def main():
 	SetUpVolumePressure()
 	AnimateInTime()
-    
+    #DeleteActivePlots()
 	SetUpVelocity()
 	AnimateInTime()
-    
 	SetUpPressure()
 	AnimateInTime()
-    
 	SetUpVandP()
 	AnimateInTime()
 	sys.exit()
