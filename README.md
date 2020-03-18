@@ -10,10 +10,9 @@ Aneurysm Dataset can be accessed [here](http://www.visitusers.org/index.php?titl
 
 Youtube Video Link to view our final movie:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=CgNcGBo7pfs
+" target="_blank"><img src="http://img.youtube.com/vi/CgNcGBo7pfs/0.jpg" 
 alt="Youtube Video Link" width="240" height="180" border="10" /></a>
-
 
 
 ## Script Summaries and How to Run Each:
